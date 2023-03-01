@@ -4,6 +4,8 @@
     "description" : "Babel plugin for variable auto imports" ,
     "main" : "lib/index.js" ,
     "scripts" : {
+        "debug" : "node --inspect-brk debug/run-plugin.mjs" ,
+        "parse" : "node --inspect debug/parse.mjs" ,
         "build" : "rimraf lib && babel src --out-dir lib" ,
         "dev" : "rimraf lib && babel src --out-dir lib --source-maps --watch" ,
         "prepublish" : "npm run build" ,
